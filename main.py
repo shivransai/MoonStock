@@ -1,4 +1,5 @@
-from backend import absolute_percent_change as apc
+from backend import percent_change as pc
+from args import make_args
 
-highestMovingStocks = apc.absolute_percent_change().get_highest_movers()
-print(highestMovingStocks)
+highestPosMovingStocks = pc.percent_change().get_highest_positive_movers()
+print(highestPosMovingStocks)
